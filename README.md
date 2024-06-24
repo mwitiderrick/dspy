@@ -6,4 +6,5 @@ pip install -r requirements.txt
 ## Step 2: 
 
 streamlit run ats.py
+
 ![Demo video](gemini.gif)
