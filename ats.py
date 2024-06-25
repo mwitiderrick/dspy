@@ -1,18 +1,11 @@
 import streamlit as st
-import google.generativeai as genai
 import PyPDF2 as pdf
-import os
 import dspy
-import os
-from dotenv import load_dotenv
 import requests
-import os
 from pydantic import BaseModel, Field
 
 llm = dspy.Google("models/gemini-pro", api_key="API_KEY")
 dspy.settings.configure(lm=llm)
-
-load_dotenv()
 
 class Input(BaseModel):
     jd: str= Field(description="Job description")
