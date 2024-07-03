@@ -6,8 +6,7 @@ import dspy
 from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 
-llm = dspy.Google("models/gemini-pro", api_key="AIzaS\
-")
+llm = dspy.Google("models/gemini-pro", api_key="AIzaS")
 dspy.settings.configure(lm=llm)
 
 load_dotenv()
