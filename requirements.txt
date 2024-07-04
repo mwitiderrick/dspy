@@ -1,3 +1,5 @@
+gradio
+langchain
 streamlit
 PyPDF2
 google.generativeai
